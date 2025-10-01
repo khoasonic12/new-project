@@ -5,25 +5,7 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenSouth, function (
     game.gameOver(false)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenEast, function (sprite, location) {
-    story.startCutscene(function () {
-        story.printText("oh my go to the end the maze ", 0, 0)
-        story.printCharacterText("oh oh ha ha ha")
-        scene.setBackgroundImage(img`
-            f f f f f f f f f f f f f f f f 
-            f f f f f f f f f f f f f f f f 
-            f f f f f f f f f f f f f f f f 
-            f f f f f f f f f f f f f f f f 
-            f f f f f f f f f f f f f f f f 
-            f f f f f f f f f f f f f f f f 
-            f f f f f f f f f f f f f f f f 
-            f f f f f f f f f f f f f f f f 
-            f f f f f f f f f f f f f f f f 
-            f f f f f f f f f f f f f f f f 
-            f f f f f f f f f f f f f f f f 
-            f f f f f f f f f f f f f f f f 
-            `)
-        game.gameOver(true)
-    })
+    game.gameOver(true)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenNorth, function (sprite, location) {
     game.gameOver(false)
