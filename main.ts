@@ -22,8 +22,8 @@ scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenEast, function (s
             f f f f f f f f f f f f f f f f 
             f f f f f f f f f f f f f f f f 
             `)
+        game.gameOver(true)
     })
-    game.gameOver(true)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.dungeon.doorOpenNorth, function (sprite, location) {
     game.gameOver(false)
